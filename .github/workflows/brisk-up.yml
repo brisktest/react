@@ -19,6 +19,9 @@ jobs:
       - name: Version
         run: brisk version          
       - name: Run Brisk
+        env:
+          BRISK_LOG_LEVEL: debug
+          BRISK_LOG_TO_CONSOLE: log
         run: brisk 
       - name: Report Status
         if: always()
