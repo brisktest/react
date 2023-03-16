@@ -29,7 +29,7 @@
       "background": false
     }
   ],
-  "concurrency": 10,
+  "concurrency": 1,
   "excludedFromSync": [
     "log/",
     ".git/",
@@ -47,7 +47,7 @@
   "apiEndpoint": "",
   "reconnectDelay": 0,
   "framework": "Jest",
-  "listTestCommand": "yarn -s test --silent --listTests --json ",
+  "listTestCommand": "yarn -s test --silent --listTests --json Context",
   "preListTestCommand": "",
   "environment": {
     "MY_ENV": "empty"
