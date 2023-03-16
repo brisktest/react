@@ -1,7 +1,4 @@
 name: Brisk Uptime Monitoring
-env:
-  BRISK_LOG_LEVEL: debug
-  BRISK_LOG_TO_CONSOLE: log
 on:
   schedule:
   - cron: "*/5 * * * *"
@@ -23,6 +20,9 @@ jobs:
         run: brisk version          
       - name: Run Brisk
         run: brisk 
+        env:
+          BRISK_LOG_LEVEL: debug
+          BRISK_LOG_TO_CONSOLE: log
       - name: Report Status
         if: always()
         uses: ravsamhq/notify-slack-action@v1
