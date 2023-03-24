@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Brisk-CI:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
+    timeout-minutes: 9
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
@@ -16,4 +16,5 @@ jobs:
           config_file: 'brisk-ci.json'
       - name: Run Brisk
         run: brisk
+        
         
