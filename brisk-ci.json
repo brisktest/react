@@ -55,5 +55,6 @@
   "image": "node-lts",
   "splitByJUnit": false,
   "orderedFiles": null,
-  "rebuildFilePaths": ["package.json"]
+  "rebuildFilePaths": ["package.json"],
+  "automaticSplitting": true
 }
