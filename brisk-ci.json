@@ -1,7 +1,7 @@
 {
   "commands": [
     {
-      "commandline": "FORCE_COLOR=true yarn test --json ",
+      "commandline": "FORCE_COLOR=true yarn -s  test --silent --json ",
       "args": null,
       "workDirectory": "",
       "background": false
