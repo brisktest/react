@@ -1,7 +1,7 @@
 name: Brisk Uptime Monitoring
 on:
   schedule:
-  - cron: "*/30 * * * *"
+  - cron: "5 */3 * * *"
 jobs:
   Brisk-CI:
     runs-on: ubuntu-latest
