@@ -20,7 +20,7 @@ jobs:
         run: brisk version
       - name: Run Brisk
         timeout-minutes: 9
-        run: BRISK_LOG_LEVEL=debug brisk
+        run: BRISK_NO_LOCAL_LOG_FILE=true BRISK_LOG_LEVEL=debug brisk
       - name: Report Status
         if: always()
         uses: ravsamhq/notify-slack-action@v1
